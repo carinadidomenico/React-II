@@ -6,12 +6,10 @@ import './nav.css'
 export default function Nav(props){
     return (
         <nav className="navbar">
-            <div className="navbar-container">
                 <div>
                     <img className="navbar-logo" src={logo} alt="Logotipo do RocketChat"/>
                 </div>
                 <Menu/>
-            </div>
         </nav>
     )
 }

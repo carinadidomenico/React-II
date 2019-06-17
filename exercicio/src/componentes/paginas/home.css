@@ -1,12 +1,21 @@
-.home {
+.home-header {
     background-image: url('../../imagens/fundo.jpeg');
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    background-position: right center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay; 
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 50px;
+    text-align: center;
+    padding: 15px 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home-header h1 {
+    font-size: 3rem;
+    color: white;
 }

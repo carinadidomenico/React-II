@@ -3,8 +3,8 @@ import './home.css'
 
 export default function Home(props){
     return (
-        <div className="home">
-            <p>A era da comunicação intergalática</p>
-        </div>
+        <section className="home-header">
+            <h1>A era da comunicação intergalática</h1>
+        </section>
     )
 }

@@ -3,7 +3,7 @@ import './App.css';
 
 // Páginas
 import Home from './componentes/paginas/Home'
-import Cadastro from './componentes/paginas/Cadastro'
+import Cadastro from './componentes/paginas/cadastro/Cadastro'
 import Chat from './componentes/paginas/Chat'
 
 // Componentes
