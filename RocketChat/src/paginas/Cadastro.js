@@ -5,8 +5,6 @@ import PessoaJuridica from './paginaCadastro/PessoaJuridica'
 import Final from './paginaCadastro/Final'
 import './cadastro.css'
 
-
-
 class Cadastro extends React.Component{
     constructor(props){
         super(props)
