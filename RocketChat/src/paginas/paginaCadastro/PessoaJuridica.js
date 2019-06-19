@@ -1,6 +1,7 @@
 import React from 'react'
 import Legenda from '../../componentes/cadastro/formulario/Legenda'
 import CaixaTexto from '../../componentes/cadastro/formulario/CaixaTexto'
+import BotaoEnviar from '../../componentes/cadastro/formulario/BotaoEnviar'
 
 class PessoaJuridica extends React.Component{
 
@@ -124,6 +125,7 @@ class PessoaJuridica extends React.Component{
                             onChange={this.handleChange}  
                         />
                     </div>
+                    <BotaoEnviar acaoBotao={this.handleSubmit} classeBotao='botao'/>
                 </form>
 
             </div>

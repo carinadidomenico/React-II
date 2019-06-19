@@ -1,7 +1,7 @@
 import React from 'react'
 import Astronauta from '../../imagens/astronaut.png'
 import Globo from '../../imagens/globe.png'
-import BotaoInicial from '../../componentes/cadastro/BotoesCadastroInicial'
+import BotaoInicial from '../../componentes/cadastro/formulario/BotoesCadastroInicial'
 
 const Inicial = (props) => {
     return (
