@@ -25,7 +25,7 @@ export default class Chat extends Component {
             console.log (erro)
         })
     }
-
+    
     render() {
         const {comentarios} = this.state
         return (
