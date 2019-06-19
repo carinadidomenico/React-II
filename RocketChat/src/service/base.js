@@ -7,7 +7,6 @@ const config = {
     timeout: 1000,
 }
 
-
 // Em caso de requisição de usuário (erro)
 // if (usuario) {
 //     config.headers = {
@@ -22,4 +21,3 @@ export function getComentarios() {
 
     return protocolo.get(url)
 }
-
