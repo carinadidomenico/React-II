@@ -71,7 +71,7 @@ class PessoaFisica extends React.Component{
                             CPF:
                         </Legenda>
                         <CaixaTexto
-                            type="text" 
+                            type="number" 
                             className="campo" 
                             id="numeroDoCpf"
                             placeholder="000.000.000-00" 
