@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './menu.css'
-import '../nav.css'
 
 class Menu extends React.Component{
     constructor(props){
