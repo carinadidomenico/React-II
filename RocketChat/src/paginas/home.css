@@ -1,6 +1,5 @@
-
 .home-header {
-    background-image: url('../../imagens/fundo.jpeg');
+    background-image: url('../imagens/fundo.jpeg');
     min-height: 100vh;
     background-position: right center;
     background-attachment: fixed;
@@ -19,5 +18,3 @@
     font-size: 3rem;
     color: white;
   }
-
-  
