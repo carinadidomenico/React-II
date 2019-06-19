@@ -1,43 +1,47 @@
-import React from 'react'
-import Comentario from '../componentes/comentario/Comentario'
-// import { getComentarios } from '../service/base'
-
+import React, {Component} from 'react'
+import Comentario from '../componentes/comentario/Comentario';
 import './chat.css'
+import {getComentarios} from '../service/base'
 
-export default class Chat extends React.Component {
+
+export default class Chat extends Component {
     constructor(props) {
-        super(props)
+        super (props)
 
         this.state = {
-            comentarios: undefined,
+            comentarios: []
         }
     }
 
     componentDidMount() {
         getComentarios()
-        .then(response => {
-            console.log(response)
+        .then (response => {
+            console.log (response)
             this.setState({
                 comentarios: response.data
             })
         })
-        .catch(error => {
-            console.error(error)
+        .catch (erro => {
+            console.log (erro)
         })
     }
 
     render() {
+        const {comentarios} = this.state
         return (
-            <div className='chat'>
+            <div className="chat">
                 {
-                    this.state.comentarios ?
-                        this.state.comentarios.map((item, index) => {
-                            return <Comentario comentario={item} key={index+'comentario'} />
-                        })
-                        :
-                        <span>Carregando comentários :D</span>
+                    comentarios.length > 0 ? 
+                    comentarios.map((item, index) => {
+                        return (
+                            <Comentario
+                                comentario={item}
+                                key={index+'comentario'}
+                            /> 
+                        )
+                    }) :
+                    <span>Carregando comentários</span>
                 }
-                
             </div>
         )
     }

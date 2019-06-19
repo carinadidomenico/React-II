@@ -1,13 +1,14 @@
-import React from 'react' 
-import Header from '../componentes/header/Header'
+import React from 'react'
+import './home.css'
 
-function Home(props) {
-
-    return (
-        <main>
-            <Header titulo='A era da comunicação intergalática' className='home-header' />
-        </main>
+const Home = (props)=>{
+    return(
+        <section className="home-header">
+            <h1>
+                A era da comunicação intergalática
+            </h1>
+        </section>
     )
 }
 
-export default Home 
+export default Home

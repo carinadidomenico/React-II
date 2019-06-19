@@ -1,5 +1,5 @@
 .home-header {
-    background-image: url('../../imagens/fundo.jpeg');
+    background-image: url('../imagens/fundo.jpeg');
     min-height: 100vh;
     background-position: right center;
     background-attachment: fixed;
@@ -12,10 +12,9 @@
     justify-content: center;
     text-align: center;
     padding: 15px 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .home-header h1 {
     font-size: 3rem;
     color: white;
-}
+  }

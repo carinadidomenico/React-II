@@ -1,45 +1,40 @@
-import React, { Component } from 'react'
-import Inicial from './inicial/Inicial'
-import PessoaFisica from './pessoaFisica/PessoaFisica'
-import PessoaJuridica from './pessoaJuridica/PessoaJuridica'
+import React from 'react'
+import Inicial from './paginaCadastro/Inicial'
+import PessoaFisica from './paginaCadastro/PessoaFisica'
+import PessoaJuridica from './paginaCadastro/PessoaJuridica'
+import Final from './paginaCadastro/Final'
 import './cadastro.css'
 
-export default class Cadastro extends Component {
-    constructor(props) {
-        super(props)
 
+
+class Cadastro extends React.Component{
+    constructor(props){
+        super(props)
         this.state = {
-            conteudo: undefined
+            conteudo : undefined,
         }
     }
 
-    handleClick = (value) => {
-        const clique = value
-        console.log(clique, "clicou")
+    trocarContaudo = (valorDoMeuConteudo) => {
+        // this.setState({conteudo: valorDoMeuConteudo}) //forma reduzida
         
         this.setState({
-            conteudo: clique
+            conteudo: valorDoMeuConteudo    
         })
+        
     }
-
-    render() {
-        return (
-            <div className='cadastro'>
-                {
-                    this.state.conteudo === undefined &&
-                    <Inicial onClick={this.handleClick}/>  
-                }
-                {
-                    this.state.conteudo === 'PF' &&
-                    <PessoaFisica onClick={this.handleClick}/>
-                }
-                {
-                    this.state.conteudo === 'PJ' &&
-                    <PessoaJuridica onClick={this.handleClick}/>
-                }
+    
+    render (){
+        return(
+            <div className="cadastro">                
+                {this.state.conteudo === undefined && <Inicial alteraConteudo = {this.trocarContaudo}/>} 
+                {this.state.conteudo === "PF" && <PessoaFisica />}  
+                {this.state.conteudo === "PJ" && <PessoaJuridica />}   
+                {this.state.conteudo === "final" && <Final/>}
             </div>
         )
     }
+} 
 
-   
-}
+
+export default Cadastro
